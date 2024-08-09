@@ -2,7 +2,7 @@
 RewriteEngine On
 
 # Set the default index file
-DirectoryIndex src/
+DirectoryIndex dist/
 
 # Allow access to all files and directories
 <Files *>
