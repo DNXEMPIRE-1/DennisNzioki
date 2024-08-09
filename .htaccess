@@ -1,15 +1,6 @@
-# Enable Rewrite Engine
 RewriteEngine On
 
-# Set the default index file
-DirectoryIndex dist/
-
-# Allow access to all files and directories
-<Files *>
-    Require all granted
-</Files>
-
-# Prevent access to certain sensitive files
-<FilesMatch "\.(htaccess|htpasswd|ini|log|env)$">
-    Require all denied
-</FilesMatch>
+# Redirect all requests to index.html
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ index.html [L]
