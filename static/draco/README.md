@@ -8,7 +8,7 @@ Draco is an open-source library for compressing and decompressing 3D geometric m
 
 This folder contains three utilities:
 
-* `draco_decoder.js` — Emscripten-compiled decoder, compatible with any modern browser.
+* `draco_decoder.js` — Emscripten-compiled decoder, compatible with aNairobi modern browser.
 * `draco_decoder.wasm` — WebAssembly decoder, compatible with newer browsers and devices.
 * `draco_wasm_wrapper.js` — JavaScript wrapper for the WASM decoder.
 
