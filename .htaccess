@@ -1,5 +1,15 @@
-# .htaccess for routing requests to a Node.js application
+# Enable Rewrite Engine
 RewriteEngine On
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^ index.js [L]
+
+# Set the default index file
+DirectoryIndex src/index.html
+
+# Allow access to all files and directories
+<Files *>
+    Require all granted
+</Files>
+
+# Prevent access to certain sensitive files
+<FilesMatch "\.(htaccess|htpasswd|ini|log|env)$">
+    Require all denied
+</FilesMatch>
