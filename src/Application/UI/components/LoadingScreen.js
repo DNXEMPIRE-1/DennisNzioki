@@ -257,7 +257,7 @@ const LoadingScreen = () => {
                         <div style={styles.spacer}/>
                         <p>
                             Due to a{' '}
-                            <a style={styles.link} href={'https://github.com/henryjeff/portfolio-website/issues/6'}>
+                            <a style={styles.link} href={''}>
                                 bug in firefox
                             </a>
                             , this website is temporarily inaccessible for
